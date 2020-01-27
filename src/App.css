@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f8f8f8;
+	font-family: "Montserrat", sans-serif;
+}
+
+.Todo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	margin: 25px;
+	width: 60%;
+	border-radius: 6px;
+	border: 1px solid #c4c4c4;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #c4c4c4;
+}
+
+.Todo__header {
+	color: #22b9ff;
+}
+
+.Todo__new-item {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+}
+
+.Todo__add-input {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid #34dbff;
+	outline: none;
+	color: #34dbff;
+	font-weight: bold;
+}
+
+.Todo__add-input::placeholder {
+	color: #c4c4c4;
+	font-weight: normal;
+}
+
+.Todo__add-button {
+	text-transform: uppercase;
+	border: 1px solid #34dbff;
+	color: #34dbff;
+	margin-left: 10px;
+	border-radius: 5px;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+
+.Todo__add-button:hover {
+	background-color: #34dbff;
+	color: #fff;
+}
+
+.Todo__item {
+	width: 80%;
+	display: flex;
+	justify-content: space-between !important;
+	color: #8c8c8c;
+	overflow: hidden;
+}
+
+.Todo__item--done {
+	text-decoration: line-through !important;
+}
+
+.Todo__name {
+	cursor: pointer;
+}
+
+.Todo__icon {
+	padding: 5px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.Todo__icon:hover {
+	background-color: #f8f8f8;
+}
